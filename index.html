@@ -77,19 +77,19 @@
           <div class="modal-body">
             <div class="mb-3">
               <label for="firstname" class="form-label">First Name</label>
-              <input type="text" name="firstname" class="form-control" id="firstname" placeholder="John">
+              <input type="text" name="firstname" class="form-control" id="firstname" placeholder="John" required>
             </div>
             <div class="mb-3">
               <label for="lastname" class="form-label">Last Name</label>
-              <input type="text" name="email" class="form-control" id="lastname" placeholder="Doe">
+              <input type="text" name="email" class="form-control" id="lastname" placeholder="Doe" required>
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
-              <input type="email" name="email" class="form-control" placeholder="name@example.com">
+              <input type="email" name="email" class="form-control" placeholder="name@example.com" required>
             </div>
             <div class="mb-3">
-              <label for="comment" class="form-label">Comment</label>
-              <textarea name="comment" class="form-control" id="comment" rows="3"></textarea>
+              <label for="comment" class="form-label">Message</label>
+              <textarea name="message" class="form-control" id="comment" rows="3"></textarea>
             </div>
           </div>
           <div class="modal-footer">
@@ -108,7 +108,7 @@
         <h3 class="mb-3 mb-md-0">Sign Up for Newsletter</h3>
         <form name="enroll" method="POST" data-netlify="true">
           <div class="input-group news-input">
-            <input type="text" name="email" class="form-control" placeholder="Enter Email">
+            <input type="text" name="subscription" class="form-control" placeholder="Enter Email" required>
             <button class="btn btn-dark btn-lg" type="submit">SignUp</button>
           </div>
         </form>
