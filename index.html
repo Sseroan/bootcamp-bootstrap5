@@ -13,6 +13,7 @@
   <!-- Bootstrap icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
   <!-- map -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
   <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
   <!-- CSS -->
   <link rel="stylesheet" href="/css/style.css" />
@@ -429,12 +430,13 @@
 
   <script>
     mapboxgl.accessToken = 'pk.eyJ1Ijoic3Nlcm9hbiIsImEiOiJja3p5bnpyNnQwMjVrM2JueG5pMGQ4NHlnIn0.6oc0BlZjUiNbnSLEHSeqFw';
-    var map = new mapboxgl.Map({
+    let map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v11',
       center: [26.193818275319714, -29.100286427252442],
       zoom: 14,
     });
+    map.addControl(new mapboxgl.NavigationControl());
   </script>
 
 
