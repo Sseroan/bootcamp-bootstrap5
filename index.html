@@ -18,7 +18,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="/css/style.css" />
 
-  !--Start of Tawk.to Script-->
+  <!-- Start of Tawk.to Script-->
   <script type="text/javascript">
     var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
     (function () {
@@ -320,7 +320,7 @@
                 amet fuga nesciunt ipsam delectus consectetur aut?
               </p>
               <a href="https://twitter.com/ssero_media"><i class="fab fa-twitter"></i></a>
-              <a href="https://www.facebook.com/SseroMedia-104156728730111"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.facebook.com/sseromedia"><i class="fab fa-facebook"></i></a>
               <a href="https://www.linkedin.com/in/sseroan/"><i class="fab fa-linkedin"></i></a>
               <a href="https://www.instagram.com/ssero_media/"><i class="fab fa-instagram"></i></a>
               <a href="https://www.youtube.com/channel/UCnWqJlKpqNUsRBxp3ehNG9Q"><i
@@ -339,7 +339,7 @@
                 amet fuga nesciunt ipsam delectus consectetur aut?
               </p>
               <a href="https://twitter.com/ssero_media"><i class="fab fa-twitter"></i></a>
-              <a href="https://www.facebook.com/SseroMedia-104156728730111"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.facebook.com/sseromedia"><i class="fab fa-facebook"></i></a>
               <a href="https://www.linkedin.com/in/sseroan/"><i class="fab fa-linkedin"></i></a>
               <a href="https://www.instagram.com/ssero_media/"><i class="fab fa-instagram"></i></a>
               <a href="https://www.youtube.com/channel/UCnWqJlKpqNUsRBxp3ehNG9Q"><i
@@ -358,7 +358,7 @@
                 amet fuga nesciunt ipsam delectus consectetur aut?
               </p>
               <a href="https://twitter.com/ssero_media"><i class="fab fa-twitter"></i></a>
-              <a href="https://www.facebook.com/SseroMedia-104156728730111"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.facebook.com/sseromedia"><i class="fab fa-facebook"></i></a>
               <a href="https://www.linkedin.com/in/sseroan/"><i class="fab fa-linkedin"></i></a>
               <a href="https://www.instagram.com/ssero_media/"><i class="fab fa-instagram"></i></a>
               <a href="https://www.youtube.com/channel/UCnWqJlKpqNUsRBxp3ehNG9Q"><i
@@ -378,7 +378,7 @@
                 amet fuga nesciunt ipsam delectus consectetur aut?
               </p>
               <a href="https://twitter.com/ssero_media"><i class="fab fa-twitter"></i></a>
-              <a href="https://www.facebook.com/SseroMedia-104156728730111"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.facebook.com/sseromedia"><i class="fab fa-facebook"></i></a>
               <a href="https://www.linkedin.com/in/sseroan/"><i class="fab fa-linkedin"></i></a>
               <a href="https://www.instagram.com/ssero_media/"><i class="fab fa-instagram"></i></a>
               <a href="https://www.youtube.com/channel/UCnWqJlKpqNUsRBxp3ehNG9Q"><i
@@ -427,9 +427,9 @@
   <footer class="p-5 bg-dark text-white text-center position-relative">
     <div class="container">
       <p class="lead">
-        Copyright &copy;2022 SseroMedia
+        Copyright &copy;2021 - <span class="currYear"></span> SseroMedia
       </p>
-      <a href="#" class="position-absolute bottom-0 end-0 p-5">
+      <a href="#" class="position-absolute bottom-0 start-0 p-5">
         <i class="fa-solid fa-circle-chevron-up fa-2x text-white"></i>
       </a>
     </div>
@@ -451,6 +451,10 @@
       zoom: 14,
     });
     map.addControl(new mapboxgl.NavigationControl());
+
+    const currYear = document.querySelector('.currYear')
+    const autoYear = new Date().getUTCFullYear();
+    currYear.textContent = autoYear;
   </script>
 
 
